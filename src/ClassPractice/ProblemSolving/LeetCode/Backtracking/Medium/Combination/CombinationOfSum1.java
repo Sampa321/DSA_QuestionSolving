@@ -1,9 +1,6 @@
 package ClassPractice.ProblemSolving.LeetCode.Backtracking.Medium.Combination;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
 
 /*39. Combination of sum
 Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order.
@@ -32,7 +29,7 @@ Input: candidates = [2], target = 1
 Output: []
 
  */
-public class CombinationOfSumExtraSpace {
+public class CombinationOfSum1 {
     static void main(String[] args) {
         int nums[] = {2,3,6,7};
         int target = 7;
