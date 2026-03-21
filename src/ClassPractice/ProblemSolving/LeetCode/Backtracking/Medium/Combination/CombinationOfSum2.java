@@ -30,7 +30,7 @@ public class CombinationOfSum2 {
             if(t<a[i]) break;
             dubba.add(a[i]);
             printCombination(index+1,t-a[i],dubba,result,a);
-            dubba.remove(dubba.size()-1);
+            dubba.removeLast();
         }
     }
 }
