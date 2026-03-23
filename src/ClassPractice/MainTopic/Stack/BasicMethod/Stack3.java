@@ -19,12 +19,22 @@ public class Stack3 {
     }
 
     public int pop(){
+        if(list.isEmpty())
+        {
+            System.out.println("Arraylist is empty!!");
+            return Integer.MAX_VALUE;
+        }
         int result = this.list.get(this.size()-1);
         this.list.remove(this.size()-1);
         return result;
     }
 
     public int peak(){
+        if(list.isEmpty())
+        {
+            System.out.println("Arraylist is empty!!");
+            return Integer.MAX_VALUE;
+        }
         return this.list.get(this.size()-1);
     }
 
