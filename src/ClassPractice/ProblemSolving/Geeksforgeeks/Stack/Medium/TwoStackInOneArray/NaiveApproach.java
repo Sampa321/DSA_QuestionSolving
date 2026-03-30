@@ -1,4 +1,7 @@
 package ClassPractice.ProblemSolving.Geeksforgeeks.Stack.Medium.TwoStackInOneArray;
+
+import java.util.Scanner;
+
 /*
 You are given an array of a fixed size. Your task is to efficiently implement two stacks in this single array.
 
@@ -59,23 +62,34 @@ pop2(): the stack2 is empty hence returned -1.
 pop2(): the stack2 is empty hence returned -1.
  */
 public class NaiveApproach {
-    int []arr = new int[100];
+    int []arr;
     int top1;
     int top2;
-    NaiveApproach(){
+    int capacity;
+    NaiveApproach(int capacity){
+        this.capacity = capacity;
+        arr = new int[capacity];
         top1 = -1;
-        top2 = arr.length/2;
+        top2 = capacity/2;
     }
     // Function to push an integer into the stack1.
     void push1(int x) {
-        // code here
+        if(top1 == this.capacity/2)
+        {
+            System.out.println("Stack1 is full !!");
+            return;
+        }
         top1++;
         this.arr[this.top1] = x;
     }
 
     // Function to push an integer into the stack2.
     void push2(int x) {
-        // code here
+        if(this.top2 == capacity)
+        {
+            System.out.println("Stack2 is full");
+            return;
+        }
         this.arr[this.top2] = x;
         this.top2++;
     }
@@ -83,7 +97,6 @@ public class NaiveApproach {
     // Function to remove an element from top of the stack1.
 
     int pop1() {
-        // code here
         if(this.top1 == -1)
         {
             return -1;
@@ -96,8 +109,7 @@ public class NaiveApproach {
 
     // Function to remove an element from top of the stack2.
     int pop2() {
-        // code here
-        if(this.top2 == (arr.length/2))
+        if(this.top2 == (arr.length/2)-1)
         {
             return -1;
         }
@@ -106,7 +118,10 @@ public class NaiveApproach {
     }
 
     public static void main(String[] args) {
-        NaiveApproach stack = new NaiveApproach();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter capacity : ");
+        int capacity = sc.nextInt();
+        NaiveApproach stack = new NaiveApproach(capacity);
 //        stack.push1(2);
 //        stack.push1(3);
 //        stack.push2(4);
@@ -116,10 +131,8 @@ public class NaiveApproach {
 
 
         stack.push1(1);
-        stack.push2(2);;
-        System.out.print(stack.pop1()+" ");
-        stack.push1(3);
-        System.out.print(stack.pop1()+" ");
-        System.out.print(stack.pop1());;
+        stack.push1(2);;
+         stack.push1(6);
+         stack.push1(9);
     }
 }

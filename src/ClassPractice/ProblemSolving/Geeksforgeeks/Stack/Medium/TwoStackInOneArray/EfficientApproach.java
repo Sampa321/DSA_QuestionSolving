@@ -1,4 +1,7 @@
 package ClassPractice.ProblemSolving.Geeksforgeeks.Stack.Medium.TwoStackInOneArray;
+
+import java.util.Scanner;
+
 /*
 You are given an array of a fixed size. Your task is to efficiently implement two stacks in this single array.
 
@@ -62,24 +65,38 @@ public class EfficientApproach {
     int []arr;
     int top1;
     int top2;
-    EfficientApproach() {
-        arr = new int[100];
+    int capacity;
+    EfficientApproach(int capacity) {
+        arr = new int[capacity];
         top1 = -1;
-        top2 = 100;
+        top2 = capacity;
+        this.capacity = capacity;
     }
 
     // Function to push an integer into the stack1.
     void push1(int x) {
         // code here
-        top1++;
-        this.arr[this.top1] = x;
+        if(top2-top1 > 1)
+        {
+            top1++;
+            this.arr[this.top1] = x;
+        }
+        else {
+            System.out.println("Stack is full");
+        }
     }
 
     // Function to push an integer into the stack2.
     void push2(int x) {
         // code here
-        top2--;
-        this.arr[this.top2] = x;
+        if(top2-top1 > 1)
+        {
+            top2--;
+            this.arr[this.top2] = x;
+        }
+        else {
+            System.out.println("Stack is full");
+        }
     }
 
     // Function to remove an element from top of the stack1.
@@ -88,7 +105,8 @@ public class EfficientApproach {
         // code here
         if(this.top1 == -1)
         {
-            return -1;
+            System.out.println("Stack is empty!!");
+            return Integer.MAX_VALUE;
         }
         int result =  this.arr[this.top1];
         this.top1--;
@@ -99,16 +117,29 @@ public class EfficientApproach {
     // Function to remove an element from top of the stack2.
     int pop2() {
         // code here
-        if(this.top2 == 100)
+        if(this.top2 == capacity)
         {
-            return -1;
+            System.out.println("Stack is empty!!");
+            return Integer.MAX_VALUE;
         }
         int result =  this.arr[this.top2];
         this.top2++;
         return result;
     }
+
+    int size1(){
+        return top1+1;
+    }
+
+    int size2(){
+        return this.capacity - top2;
+    }
+
     static void main(String[] args) {
-        EfficientApproach stack = new EfficientApproach();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the capacity : ");
+        int capacity = sc.nextInt();
+        EfficientApproach stack = new EfficientApproach(capacity);
 //        stack.push1(1);
 //        stack.push2(2);;
 //        System.out.print(stack.pop1()+" ");
@@ -120,8 +151,13 @@ public class EfficientApproach {
         stack.push1(2);
         stack.push1(3);
         stack.push2(4);
-        System.out.print(stack.pop1()+" ");
-        System.out.print(stack.pop2()+" ");
+        stack.push2(42);
+        stack.push2(54);
+
+        System.out.println(stack.pop1()+" ");
+        System.out.println(stack.pop1()+" ");
+        System.out.println(stack.pop1()+" ");
+        System.out.println(stack.pop2()+" ");
         System.out.print(stack.pop2());
     }
 }

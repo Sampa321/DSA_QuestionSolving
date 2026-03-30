@@ -1,7 +1,10 @@
 package ClassPractice.ProblemSolving.LeetCode.Stack.Easy;
+
+import java.util.Stack;
+
 public class ValidParentheses {
     public static boolean checkValidParentheses(String input){
-        Stack3  stack = new Stack3();
+        Stack<Character> stack = new Stack<>();
         for (int i = 0;i<input.length();i++)
         {
             char bracket = input.charAt(i);
