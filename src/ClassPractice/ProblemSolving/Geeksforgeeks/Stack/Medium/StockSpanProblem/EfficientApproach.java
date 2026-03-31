@@ -12,27 +12,22 @@ Input: arr[] = [10, 4, 5, 90, 120, 80]
 Output: [1, 1, 2, 4, 5, 1]
 Explanation: Traversing the given input span 10 is greater than equal to 10 and there are no more days behind it so the span is 1, 4 is greater than equal to 4 and smaller than 10 so the span is 1, 5 is greater than equal to 4 and 5 and smaller than 10 so the span is 2, and so on. Hence the output will be [1, 1, 2, 4, 5, 1].
  */
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Stack;
 
-public class NaiveApproach {
+public class EfficientApproach {
     public static void main(String[] args) {
-        int []arr = {100, 80, 90, 120};
-        int []span = new int[arr.length];
-        for(int i = 0;i<arr.length;i++)
-        {
-            int c = 1;
-            for(int j = i-1;j>=0;j--)
-            {
-                if(arr[i]<arr[j])
-                {
-                    break;
-                }
-                else {
-                    c++;
-                }
+        int []arr = {50, 10, 20, 30, 40, 45, 70, 50, 10};
+        ArrayList<Integer> spans = new ArrayList<>();
+        Stack<Integer> st = new Stack<>();
+        for(int i = 0; i<arr.length;i++) {
+            while (!st.empty() && arr[st.peek()] <= arr[i]) {
+                st.pop();
             }
-            span[i] = c;
+            int calc_span = st.empty() ? (i + 1) : (i - st.peek());
+            spans.add(calc_span);
+            st.push(i);
         }
-        System.out.println(Arrays.toString(span));
+        System.out.println(spans);
     }
 }
