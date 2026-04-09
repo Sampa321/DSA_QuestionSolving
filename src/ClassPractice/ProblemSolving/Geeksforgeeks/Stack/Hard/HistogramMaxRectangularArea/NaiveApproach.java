@@ -6,7 +6,7 @@ public class NaiveApproach {
         for(int i = 0;i<arr.length; i++)
         {
             int c = 1;
-            for(int j = i-1;j>=0;j--)
+            for(int j = i-1;j >= 0;j--)
             {
                 if(arr[i] <= arr[j])
                 {
