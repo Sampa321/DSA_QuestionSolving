@@ -13,12 +13,22 @@ public class ReverseWordInString {
            st.push(word[i]);
 
        }
-       String result = "";
+       StringBuilder result = new StringBuilder();
        while(!st.isEmpty())
        {
-           result += st.pop();
-           result += " ";
+           result.append(st.pop()).append(" ");
        }
-       System.out.println(result.replaceAll("\\s+$",""));
+       System.out.println(result.toString().trim());
+
+
+
+       /* Without extra space
+
+        String str = "I love Coding";
+        String[] words = str.trim().split(" ");
+        for (int i = words.length - 1; i >= 0; i--) {
+            System.out.print(words[i] + " ");
+        }
+        */
     }
 }
