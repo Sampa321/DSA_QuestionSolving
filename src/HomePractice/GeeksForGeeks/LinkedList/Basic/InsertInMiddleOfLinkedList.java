@@ -20,7 +20,7 @@ Explanation:
 The new element is inserted after the current middle element in the linked list and Hence, the output is 10->20->30->40->50.
  */
 public class InsertInMiddleOfLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         Node head1 = new Node(1);
         head1.next = new Node(2);

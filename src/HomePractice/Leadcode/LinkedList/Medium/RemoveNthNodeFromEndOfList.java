@@ -18,7 +18,7 @@ Input: head = [1,2], n = 1
 Output: [1]
  */
 public class RemoveNthNodeFromEndOfList {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);

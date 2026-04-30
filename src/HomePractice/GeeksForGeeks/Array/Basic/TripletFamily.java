@@ -16,7 +16,7 @@ Output: false
 Explanation: No triplets satisfy the condition.
  */
 public class TripletFamily {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of element : ");
         int n = sc.nextInt();

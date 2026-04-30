@@ -15,7 +15,7 @@ Output: 10
 Explanation: array is already sorted 1*4 + 2*3 = 10
  */
 public class SumOfAlternateProduct {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size : ");
         int n = sc.nextInt();

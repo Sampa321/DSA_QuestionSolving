@@ -19,7 +19,7 @@ Output: 5
 Explanation: The element 15 is not present in the array, but inserting it after index 4 will maintain the sorted order.
  */
 public class SearchInsertPositionOfKinSortedArray {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size : ");
         int n = sc.nextInt();

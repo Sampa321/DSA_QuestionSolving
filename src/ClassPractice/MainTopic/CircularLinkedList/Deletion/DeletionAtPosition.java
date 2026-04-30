@@ -7,7 +7,7 @@ import java.util.Scanner;
 import static ClassPractice.MainTopic.CircularLinkedList.Node.length;
 
 public class DeletionAtPosition {
-   public static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         //Node head = null;
         /*Node head = new Node(12);

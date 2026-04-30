@@ -20,7 +20,7 @@ Output: -1
 Explanation: No element less than or equal to 0 is found. So, output is -1.
  */
 public class FloorInSortedArray {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size:");
         int n= sc.nextInt();

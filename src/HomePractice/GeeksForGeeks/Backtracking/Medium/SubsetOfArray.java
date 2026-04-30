@@ -23,7 +23,7 @@ The subsets of [2, 4] in lexicographical order are:
 [], [2], [2, 4], [4]
  */
 public class SubsetOfArray {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size : ");
         int n = sc.nextInt();

@@ -5,7 +5,7 @@ import ClassPractice.MainTopic.CircularLinkedList.Node;
 import java.util.Scanner;
 
 public class NaiveApproach {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         //Node head = null;
         /*Node head = new Node(12);

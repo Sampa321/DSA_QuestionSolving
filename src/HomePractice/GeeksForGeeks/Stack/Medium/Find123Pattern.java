@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Stack;
 
 public class Find123Pattern {
-    static void main() {
+    public static void main(String []args) {
         int []arr = {18,17,10,11};
         System.out.println(has132Pattern(arr));
     }

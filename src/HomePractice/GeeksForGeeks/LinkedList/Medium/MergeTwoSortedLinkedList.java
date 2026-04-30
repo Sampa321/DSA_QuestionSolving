@@ -19,7 +19,7 @@ Explanation:
 import HomePractice.GeeksForGeeks.LinkedList.Node;
 
 public class MergeTwoSortedLinkedList {
-    public static void main() {
+    public static void main(String []args) {
         Node head1 = new Node(1);
         head1.next = new Node(20);
         head1.next.next = new Node(30);

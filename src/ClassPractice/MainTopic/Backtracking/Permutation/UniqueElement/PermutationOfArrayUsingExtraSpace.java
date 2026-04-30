@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PermutationOfArrayUsingExtraSpace {
         public static void main(String[] args) {
-            int nums[] = {1,2,3};
+            int []nums = {1,2,3};
             boolean []track = new boolean[nums.length];
             ArrayList<Integer> dubba = new ArrayList<>();
             f(nums,dubba,track);
@@ -23,7 +23,7 @@ public class PermutationOfArrayUsingExtraSpace {
                     dubba.add(nums[i]);
                     track[i] = true;
                     f(nums,dubba,track);
-                    dubba.remove(dubba.size()-1);
+                    dubba.removeLast();
                     track[i] = false;
                 }
             }

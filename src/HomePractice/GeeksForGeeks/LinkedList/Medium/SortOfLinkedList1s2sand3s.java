@@ -22,7 +22,7 @@ Explanation: After arranging all the 0s, 1s and 2s in the given format, the outp
 
  */
 public class SortOfLinkedList1s2sand3s {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(1);
         head.next = new Node(2);
         head.next.next = new Node(0);

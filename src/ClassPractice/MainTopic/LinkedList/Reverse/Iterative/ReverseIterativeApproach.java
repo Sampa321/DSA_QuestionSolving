@@ -5,7 +5,7 @@ import ClassPractice.MainTopic.LinkedList.Node;
 import java.util.ArrayList;
 
 public class ReverseIterativeApproach {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(10);
         head.next = new Node(20);
         head.next.next = new Node(30);

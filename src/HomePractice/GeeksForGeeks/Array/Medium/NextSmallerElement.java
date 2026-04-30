@@ -34,7 +34,7 @@ Output: [1, -1]
 Explanation: 4 will be updated to 1 and 1 will be updated to -1.
  */
 public class NextSmallerElement {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size: ");
         int n = sc.nextInt();

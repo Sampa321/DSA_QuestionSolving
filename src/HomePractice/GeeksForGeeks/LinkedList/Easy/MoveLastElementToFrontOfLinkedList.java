@@ -16,7 +16,7 @@ Output: 2
 Explanation: Here 2 is the only element so, the linked list will remain the same.
  */
 public class MoveLastElementToFrontOfLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(2);
         head.next = new Node(5);
         head.next.next = new Node(6);

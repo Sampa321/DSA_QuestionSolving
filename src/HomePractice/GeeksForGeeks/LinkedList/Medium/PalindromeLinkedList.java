@@ -19,7 +19,7 @@ Output: false
 Explanation: The given linked list is 10 -> 20 -> 30 -> 40 -> 50, which is not a palindrome.
  */
 public class PalindromeLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(1);
         head.next = new Node(2);
         head.next.next = new Node(1);

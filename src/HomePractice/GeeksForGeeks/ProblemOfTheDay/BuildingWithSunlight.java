@@ -3,7 +3,7 @@ package HomePractice.GeeksForGeeks.ProblemOfTheDay;
 import java.util.Stack;
 
 public class BuildingWithSunlight {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         int []arr = {6, 2, 8, 4, 11, 13};
         System.out.println(visibleBuildings(arr));
     }

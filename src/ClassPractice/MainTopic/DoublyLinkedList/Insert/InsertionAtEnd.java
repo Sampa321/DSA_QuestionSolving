@@ -5,7 +5,7 @@ import ClassPractice.MainTopic.DoublyLinkedList.Node;
 import java.util.Scanner;
 
 public class InsertionAtEnd {
-   public static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         //Node head = null;
         //Node head = new Node(12);

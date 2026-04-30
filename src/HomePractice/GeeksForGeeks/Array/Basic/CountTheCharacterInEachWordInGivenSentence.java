@@ -25,7 +25,7 @@ Explanation: "geeks" has 5 characters
 "geeks" has 5 characters
  */
 public class CountTheCharacterInEachWordInGivenSentence{
-    static void main() {
+   public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the string : ");
         String str = sc.nextLine();

@@ -5,7 +5,7 @@ import ClassPractice.MainTopic.CircularDoublyLinkedList.Node;
 import java.util.Scanner;
 
 public class InsertAtPosition {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         //Node head = null;
         /*Node head = new Node(12);
@@ -46,7 +46,7 @@ public class InsertAtPosition {
                return temp;
            }
             System.out.println("Invalid position !!");
-           return head;
+           return null;
         }
         if(pos == 1)
         {

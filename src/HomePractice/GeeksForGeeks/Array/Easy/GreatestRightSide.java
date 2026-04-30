@@ -18,7 +18,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class GreatestRightSide {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size:");
         int n= sc.nextInt();

@@ -24,7 +24,7 @@ Input: n = 3, arr[] = [1, 2, 3]
 Output: -1 1 2
  */
 public class SmallestOnLeft {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size: ");
         int n = sc.nextInt();

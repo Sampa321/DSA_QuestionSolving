@@ -20,7 +20,7 @@ Explanation: After merging the two lists in non-increasing order, we have new li
 
  */
 public class MergeTwoSortedLinkedListInReverseOrder {
-    static void main() {
+    public static void main(String []args)  {
         Node head1 = new Node(1);
         head1.next = new Node(2);
         head1.next.next = new Node(4);

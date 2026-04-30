@@ -1,7 +1,7 @@
 package ClassPractice.ProblemSolving.Geeksforgeeks.Stack.Hard.TrappingRainWater;
 
 public class Better {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         int ml = 0;
         int totalWater = 0;
         int []arr = {0,1,0,2,1,0,1,3,2,1,2,1};

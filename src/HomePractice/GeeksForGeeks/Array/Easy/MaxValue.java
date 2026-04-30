@@ -17,7 +17,7 @@ Output: 3
 Explanation: (a[0]-0) -(a[1]-1) = (3-0) - (1-1) = 3
  */
 public class MaxValue {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the arraylist size : ");
         int n = sc.nextInt();

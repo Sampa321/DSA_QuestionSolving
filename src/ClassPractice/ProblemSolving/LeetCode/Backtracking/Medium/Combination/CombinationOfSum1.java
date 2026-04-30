@@ -30,7 +30,7 @@ Output: []
 
  */
 public class CombinationOfSum1 {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         int nums[] = {2,3,6,7};
         int target = 7;
         ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();

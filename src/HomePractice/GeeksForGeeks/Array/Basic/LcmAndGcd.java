@@ -19,7 +19,7 @@ Output: [1, 1]
 Explanation: LCM of 1 and 1 is 1, while their GCD is 1.
  */
 public class LcmAndGcd {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of a : ");
         int a = sc.nextInt();

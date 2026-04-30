@@ -22,7 +22,7 @@ Output: 3
 Explanation: The sum of the last two nodes in the linked list is 2 + 1 = 3.
  */
 public class FindTheSumOfLastKnodesOfLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         Node head = new Node(5);
         head.next = new Node(9);

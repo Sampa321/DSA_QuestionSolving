@@ -3,7 +3,7 @@ package HomePractice.InterviewPreparation;
 import java.util.Arrays;
 
 public class MergeTwoSortedArray {
-    static void main() {
+    public static void main(String []args) {
         int []arr1 = {1,3,5};
         int []arr2 = {2,4,6};
         int i = 0;

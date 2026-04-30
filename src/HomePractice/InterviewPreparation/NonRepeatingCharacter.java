@@ -3,7 +3,7 @@ package HomePractice.InterviewPreparation;
 import java.util.HashMap;
 
 public class NonRepeatingCharacter {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         String str = "aabbcde";
         HashMap<Character,Integer> map = new HashMap<>();
         for(int i = 0; i < str.length(); i++)

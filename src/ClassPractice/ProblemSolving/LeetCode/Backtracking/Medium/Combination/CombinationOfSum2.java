@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class CombinationOfSum2 {
-    static void main() {
+    public static void main(String []args) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
         ArrayList<Integer> dubba = new ArrayList<>();
         int a[] = {2,5,2,1,2};

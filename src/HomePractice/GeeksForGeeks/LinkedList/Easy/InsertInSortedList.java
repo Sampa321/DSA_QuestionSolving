@@ -19,7 +19,7 @@ Output: 50->75->100
 Explanation: After inserting 75 the sorted linked list will look like the one in the output.
  */
 public class InsertInSortedList {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         Node head = new Node(1);
         head.next = new Node(2);

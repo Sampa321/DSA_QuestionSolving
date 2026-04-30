@@ -20,7 +20,7 @@ Output: -1
 Explanation: As number of nodes are less than k so there is no node at index 6 , therefore our answer is -1.
  */
 public class NodeAtGivenIndexInLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc= new Scanner(System.in);
         Node head = new Node(1);
         head.next = new Node(2);

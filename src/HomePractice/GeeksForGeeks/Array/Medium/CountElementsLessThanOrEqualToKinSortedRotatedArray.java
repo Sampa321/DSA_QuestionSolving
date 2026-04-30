@@ -16,7 +16,7 @@ Output: 6
 Explanation: All elements except 15 are less than 14, so the count of all elements less than 14 is 6.
  */
 public class CountElementsLessThanOrEqualToKinSortedRotatedArray {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the array size: ");
         int n = sc.nextInt();

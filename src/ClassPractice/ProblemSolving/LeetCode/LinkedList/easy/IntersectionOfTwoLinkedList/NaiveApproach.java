@@ -5,7 +5,7 @@ import ClassPractice.ProblemSolving.LeetCode.LinkedList.ListNode;
 import java.util.HashSet;
 //160.
 public class NaiveApproach {
-    static void main() {
+    public static void main(String []args) {
         ListNode headA = new ListNode(4);
         ListNode p1 = new ListNode(1);
         ListNode p2 = new ListNode(8);

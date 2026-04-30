@@ -14,13 +14,13 @@ Input: arr[] = [1, 2, 3], sum = 6
 Output: 1
 Explanation: The entire array can be taken as a subset, giving 1 + 2 + 3 = 6
  */
-public class SumOfSubSequencecount {
+public class SumOfSubSequenceCount {
     public static void main(String[] args) {
-       int  arr[] = {3, 34, 4, 12, 5, 2};
+       int  []arr = {3, 34, 4, 12, 5, 2};
         int sum = 9;
         System.out.println("count : "+subset(arr,sum,0));
     }
-    static int subset(int arr[],int sum, int counter)
+    static int subset(int []arr,int sum, int counter)
     {
         if(sum == 0)
         {

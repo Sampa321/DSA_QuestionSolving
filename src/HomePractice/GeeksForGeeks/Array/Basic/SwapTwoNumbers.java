@@ -18,7 +18,7 @@ Output: 8 15
 Explanation: after swapping it becomes 8 and 15.
  */
 public class SwapTwoNumbers {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of a : ");
         int a = sc.nextInt();

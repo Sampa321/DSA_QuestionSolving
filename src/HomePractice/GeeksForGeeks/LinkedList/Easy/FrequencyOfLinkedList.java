@@ -19,7 +19,7 @@ Output: 0
 Explanation: 3 appears 0 times.
  */
 public class FrequencyOfLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc= new Scanner(System.in);
         Node head = new Node(1);
         head.next = new Node(2);

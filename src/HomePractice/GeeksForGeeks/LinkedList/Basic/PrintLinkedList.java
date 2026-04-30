@@ -18,7 +18,7 @@ Output: 8 1
 Explanation: The linked list is 8 -> 1
  */
 public class PrintLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Node head1 = new Node(1);
         head1.next = new Node(2);
         head1.next.next = new Node(3);

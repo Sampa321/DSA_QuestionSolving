@@ -20,7 +20,7 @@ Output: 5
 Explanation: min = 1, max = 4. Sum = 1 + 4 = 5
  */
 public class MaxMin {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size : ");
         int n = sc.nextInt();

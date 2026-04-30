@@ -29,7 +29,7 @@ public class ValidParentheses {
         }
         return stack.isEmpty();
     }
-    static void main(String[] args) {
+   public static void main(String[] args) {
         String input = "[]{]";
         System.out.println(checkValidParentheses(input) ? input+" is Valid Parentheses" : input+ " is not Valid Parentheses");
     }

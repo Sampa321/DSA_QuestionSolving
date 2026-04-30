@@ -22,7 +22,7 @@ Explanation: After sorting the given linked list, the resultant list will be:
  */
 
 public class MergeSortForLinkedList {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         Node head = new Node(123);
         Node p1 = new Node(267);
         Node p2 = new Node(33);

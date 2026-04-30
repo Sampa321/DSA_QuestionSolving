@@ -3,7 +3,7 @@ package ClassPractice.MainTopic.LinkedList.Reverse.RecursiveApproach;
 import ClassPractice.MainTopic.LinkedList.Node;
 
 public class RecursiveApproach {
-    static void main() {
+    public static void main(String []args) {
         //Node head = null;
         //Node head = new Node(12);
         Node head = new Node(10);

@@ -13,7 +13,7 @@ public class SubsequenceOfString {
         subset(str,r,c+1);
         subset(str,r+ str.charAt(c),c+1);
     }
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the string : ");
         String str = sc.next();

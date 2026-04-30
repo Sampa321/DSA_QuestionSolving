@@ -26,7 +26,7 @@ Output: [[1, 9],
 Explanation: Converting rows into columns and columns into rows.
  */
 public class TransposeOfMatrix {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of matrix row :");
         int r = sc.nextInt();

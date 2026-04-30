@@ -14,13 +14,13 @@ Output: 1
 Explanation: 1 is the only Perfect Square less than 3. So, the Output is 1.
  */
 public class CountSquares {
-    static void main() {
+   public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the range : ");
         int n = sc.nextInt();
         System.out.print("Total count of squares : "+countSquares(n));
     }
-    static int countSquares(int n) {
+   public static int countSquares(int n) {
         // code here
         int c=1;
         while(Math.pow(c+1,2)<n){

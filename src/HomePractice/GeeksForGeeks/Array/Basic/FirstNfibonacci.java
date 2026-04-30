@@ -15,7 +15,7 @@ Input: n = 2
 Output: [0, 1]
  */
 public class FirstNfibonacci {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number : ");
         int n = sc.nextInt();

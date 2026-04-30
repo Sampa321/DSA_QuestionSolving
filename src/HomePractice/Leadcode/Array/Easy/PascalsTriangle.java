@@ -22,7 +22,7 @@ public class PascalsTriangle {
         }
         return list1;
     }
-   public static void main() {
+    public static void main(String []args) {
        System.out.println(generate(5));
     }
 }

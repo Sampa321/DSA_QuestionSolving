@@ -18,7 +18,7 @@ Output: 2
 Explanation:Given linked list elements are 2->2->2->2->2, in which 2 is repeated. So, we will delete the extra repeated elements 2 from the linked list and the resultant linked list will contain only 2.
  */
 public class RemoveDuplicatesFromUnsortedLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(5);
         head.next = new Node(2);
         head.next.next = new Node(2);

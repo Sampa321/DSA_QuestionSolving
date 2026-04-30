@@ -13,7 +13,7 @@ Output: false
 Explanation: 2021 is not divisible by 100 and is also not divisible by 4 so its not a leap year
  */
 public class LeapYear {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the year : ");
         int year = sc.nextInt();

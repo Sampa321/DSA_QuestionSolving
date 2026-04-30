@@ -26,7 +26,7 @@ public class ArrangeConsonantsAndVowels {
         this.data = ch;
         this.next = null;
     }
-    public static void main() {
+    public static void main(String []args) {
         ArrangeConsonantsAndVowels head = new ArrangeConsonantsAndVowels('a');
         head.next = new ArrangeConsonantsAndVowels('b');
         head.next.next = new ArrangeConsonantsAndVowels('c');

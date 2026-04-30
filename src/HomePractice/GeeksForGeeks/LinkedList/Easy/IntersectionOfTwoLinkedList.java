@@ -21,7 +21,7 @@ Output: 3->13
 Explanation: Nodes 3 and 13 are common in both of the lists and the order will be according to LinkedList1.
  */
 public class IntersectionOfTwoLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Node head1 = new Node(9);
         head1.next = new Node(6);
         head1.next.next = new Node(4);

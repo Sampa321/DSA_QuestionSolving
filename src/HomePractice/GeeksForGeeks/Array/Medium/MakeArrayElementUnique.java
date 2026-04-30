@@ -22,7 +22,7 @@ Output: 0
 Explanation: All elements are unique.
  */
 public class MakeArrayElementUnique {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size: ");
         int n = sc.nextInt();

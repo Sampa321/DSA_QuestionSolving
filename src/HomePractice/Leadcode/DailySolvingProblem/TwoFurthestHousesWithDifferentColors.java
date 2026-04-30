@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //2078
 public class TwoFurthestHousesWithDifferentColors {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of an array : ");
         int n = sc.nextInt();

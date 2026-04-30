@@ -15,7 +15,7 @@ Output: 99
 Explanation: k is 99, so we fill arr with 99.
  */
 public class FillLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         LinkedList<Integer> list = new LinkedList<>();
         System.out.print("Enter the linkedList size: ");

@@ -19,7 +19,7 @@ Explanation:
 As shown in figure both are identical.
  */
 public class IdenticalLinkedlist {
-    static void main() {
+    public static void main(String []args) {
         Node head1 = new Node(1);
         head1.next = new Node(2);
         head1.next.next = new Node(3);

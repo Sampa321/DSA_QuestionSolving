@@ -135,7 +135,7 @@ public class EfficientApproach {
         return this.capacity - top2;
     }
 
-    static void main(String[] args) {
+   public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the capacity : ");
         int capacity = sc.nextInt();

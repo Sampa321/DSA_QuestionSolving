@@ -8,7 +8,7 @@ public class Node {
         this.data = value;
         this.next = null;
     }
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(24);
         Node p1 = new Node(45);
         Node p2 = new Node(89);

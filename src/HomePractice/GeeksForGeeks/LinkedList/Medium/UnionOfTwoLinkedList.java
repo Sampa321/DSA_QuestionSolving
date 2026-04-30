@@ -21,7 +21,7 @@ Output: 1 -> 2 -> 4 -> 5 -> 6 -> 7
 Explaination: All the distinct numbers from two lists, when sorted forms the list in the output.
  */
 public class UnionOfTwoLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Node head1 = new Node(1);
         head1.next = new Node(2);
         head1.next.next = new Node(30);

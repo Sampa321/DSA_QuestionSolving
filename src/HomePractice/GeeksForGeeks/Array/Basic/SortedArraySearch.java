@@ -15,7 +15,7 @@ Input: arr[] = [2, 3, 5, 6], k = 1
 Output: false
  */
 public class SortedArraySearch {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size : ");
         int n = sc.nextInt();

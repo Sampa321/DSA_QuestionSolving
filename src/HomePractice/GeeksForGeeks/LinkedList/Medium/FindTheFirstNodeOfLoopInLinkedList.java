@@ -19,7 +19,7 @@ Output: -1
 Explanation: No loop exists in the above linked list. So the output is -1.
  */
 public class FindTheFirstNodeOfLoopInLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(1);
         Node p1 = new Node(3);
         Node p2 = new Node(2);

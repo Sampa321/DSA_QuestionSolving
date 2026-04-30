@@ -25,7 +25,7 @@ Explanation: Initially TreeSet contains [2, 3, 4]. 1 is not present in the set s
 
  */
 public class TreeSetOperations {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the tree set size: ");
         int n = sc.nextInt();

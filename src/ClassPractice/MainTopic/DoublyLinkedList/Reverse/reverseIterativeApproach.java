@@ -5,7 +5,7 @@ import ClassPractice.MainTopic.DoublyLinkedList.Node;
 import java.util.Scanner;
 
 public class reverseIterativeApproach {
-   public static void main() {
+    public static void main(String []args) {
         //Node head = null;
         //Node head = new Node(12);
         Node head = new Node(40) ;

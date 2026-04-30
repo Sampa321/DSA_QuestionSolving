@@ -5,7 +5,7 @@ import ClassPractice.MainTopic.LinkedList.Node;
 import java.util.Scanner;
 
 public class InsertNode {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         //Node head = new Node(12);
         Node head = new Node(10);

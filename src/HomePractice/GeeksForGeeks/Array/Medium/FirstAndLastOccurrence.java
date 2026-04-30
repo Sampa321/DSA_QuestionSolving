@@ -21,7 +21,7 @@ Output: [-1, -1]
 Explanation: No occurrence of 4 in the array, so, output is [-1, -1]
  */
 public class FirstAndLastOccurrence {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size: ");
         int n = sc.nextInt();

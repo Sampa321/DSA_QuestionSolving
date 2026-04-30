@@ -25,7 +25,7 @@ Output: 30 -> 40 -> 10 -> 20
 
  */
 public class RotateLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         Node head = new Node(10);
         head.next = new Node(20);

@@ -9,7 +9,7 @@ public class Example1 {
         System.out.println(n);
     }
 
-    static void main() {
+    public static void main(String []args) {
         f1(3);
     }
 }

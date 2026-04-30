@@ -8,8 +8,7 @@ public class Example2 {
         System.out.println(n);
         f1(n-1);
     }
-
-    static void main() {
+    public static void main(String []args) {
         f1(3);
     }
 }

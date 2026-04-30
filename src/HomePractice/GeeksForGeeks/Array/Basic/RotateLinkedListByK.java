@@ -19,7 +19,7 @@ Explanation:
 After rotating it by 4, we get 33 99 6.
  */
 public class RotateLinkedListByK {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the linkedList size : ");
         int n = sc.nextInt();

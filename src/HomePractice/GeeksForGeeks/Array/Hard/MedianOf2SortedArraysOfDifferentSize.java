@@ -19,7 +19,7 @@ Output: 4.5
 Explanation: The merged array is [2, 4, 5, 6]. So the median of the merged array is (4 + 5) / 2 = 4.5.
  */
 public class MedianOf2SortedArraysOfDifferentSize {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the 1st array size : ");
         int n1 = sc.nextInt();

@@ -4,7 +4,7 @@ import ClassPractice.MainTopic.CircularLinkedList.Node;
 
 public class DeletionAtEnd {
 
-    static void main() {
+    public static void main(String []args) {
         //Node head = null;
         Node head = new Node(12);
         head.next= head;

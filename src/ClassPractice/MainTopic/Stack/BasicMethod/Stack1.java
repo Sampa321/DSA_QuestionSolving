@@ -60,7 +60,7 @@ public class Stack1 {
         return a[top];
     }
 
-    public static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the capacity : ");
         int capacity = sc.nextInt();

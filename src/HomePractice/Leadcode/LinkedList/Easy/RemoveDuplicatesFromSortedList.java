@@ -13,7 +13,7 @@ Input: head = [1,1,2,3,3]
 Output: [1,2,3]
  */
 public class RemoveDuplicatesFromSortedList {
-    static void main() {
+    public static void main(String []args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(1);
         head.next.next = new ListNode(2);

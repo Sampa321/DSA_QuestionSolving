@@ -17,7 +17,7 @@ Explanation: After moving all 0s of the given list to the front, the list is: 0 
 
  */
 public class MoveAlltheZeroToTheFrontOfTheLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(1);
         head.next = new Node(0);
         head.next.next = new Node(3);

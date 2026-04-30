@@ -17,7 +17,7 @@ Output: 40
 Explaination:
  */
 public class IntersectionSortedLinkedList{
-    static void main() {
+    public static void main(String []args) {
         Node head1 = new Node(1);
         head1.next = new Node(10);
         head1.next.next = new Node(30);

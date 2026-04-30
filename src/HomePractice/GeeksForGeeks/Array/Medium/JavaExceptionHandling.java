@@ -18,7 +18,7 @@ Explanation: 5+0 = 5, 5-0 = 5, 5*0 = 0, 5/0 = "Exception Handling"
 Minimum of all is 5*0 = 0.
  */
 public class JavaExceptionHandling {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of a and b :");
         int a = sc.nextInt();

@@ -39,7 +39,7 @@ public class PermutationOfStringDuplicateElementUsingExtraSpace {
                 result += strArray[i];
                 track[i] = true;
                 permutationOfString(resultList,strArray,track,dubba,result);
-                dubba.remove(dubba.size()-1);
+                dubba.removeLast();
                 result = result.substring(0,result.length() -1);
                 track[i] = false;
             }

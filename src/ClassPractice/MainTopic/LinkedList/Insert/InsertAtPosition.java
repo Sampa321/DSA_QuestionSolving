@@ -5,7 +5,7 @@ import ClassPractice.MainTopic.LinkedList.Node;
 import java.util.Scanner;
 
 public class InsertAtPosition {
-    public static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         //Node head = null;
         Node head =new Node(23);

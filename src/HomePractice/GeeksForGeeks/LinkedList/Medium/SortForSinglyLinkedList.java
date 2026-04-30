@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class SortForSinglyLinkedList {
-    public static void main() {
+    public static void main(String []args) {
         Node head = new Node(30);
         head.next = new Node(23);
         head.next.next = new Node(28);

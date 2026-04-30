@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class N_QueenProblemNaiveApproach {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the board size: ");
         int n = sc.nextInt();
@@ -74,7 +74,7 @@ public class N_QueenProblemNaiveApproach {
             j--;
         }
         //left-bottom checking
-        i = row;
+        //i = row;
         j = col;
         while (i<board[0].length && j>=0)
         {

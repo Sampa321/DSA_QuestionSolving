@@ -17,7 +17,7 @@ Output: 1.5
 Explanation: The average of both elements will result in 1.5.
  */
 public class MedianOfAnArray {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size : ");
         int n = sc.nextInt();

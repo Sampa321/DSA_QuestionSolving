@@ -3,7 +3,7 @@ package ClassPractice.MainTopic.LinkedList.Delete;
 import ClassPractice.MainTopic.LinkedList.Node;
 
 public class DeleteFirstNode {
-    public static void main() {
+    public static void main(String []args) {
         //Node head = null;
         Node head = new Node(10);
         /*Node head = new Node(10);

@@ -24,7 +24,7 @@ Explanation: 30 is the 7th smallest element.
 
  */
 public class KthSmallestElementInMatrix {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the row and column : ");
         int n = sc.nextInt();

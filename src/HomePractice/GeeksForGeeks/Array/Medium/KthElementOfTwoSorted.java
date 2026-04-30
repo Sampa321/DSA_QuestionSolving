@@ -15,7 +15,7 @@ Output: 10
 Explanation: Combined sorted array is [1, 4, 5, 7, 8, 10, 11, 12, 15, 17]. The 6th element of this array is 10.
  */
 public class KthElementOfTwoSorted {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of element in arr1:");
         int n1 = sc.nextInt();

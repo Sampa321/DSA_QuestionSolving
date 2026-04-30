@@ -2,15 +2,9 @@ package ClassPractice.MainTopic.CircularDoublyLinkedList.Deletion;
 
 import ClassPractice.MainTopic.CircularDoublyLinkedList.Node;
 
-import java.util.Scanner;
-
 public class DeleteAtBeginning {
-    static void main() {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String []args) {
         //Node head = null;
-        /*Node head = new Node(12);
-        head.prev = head;
-        head.next = head;*/
         Node head = new Node(10);
         Node p1 = new Node(20);
         Node p2 = new Node(30);

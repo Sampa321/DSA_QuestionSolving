@@ -18,7 +18,7 @@ Output: a[] = [0, 1], b[] = [2, 3]
 Explanation: After merging two sorted arrays we get [0, 1, 2, 3].
  */
 public class MergeWithoutExtraSpace {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the 1st array size : ");
         int n1 = sc.nextInt();

@@ -24,7 +24,7 @@ Output: 0
 Explanation: There is no loop.
  */
 public class FindLengthOfLoop {
-    public static void main() {
+    public static void main(String []args) {
         Node head = new Node(1);
         Node p1 = new Node(2);
         Node p2 = new Node(3);

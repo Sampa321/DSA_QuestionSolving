@@ -19,7 +19,7 @@ Output: 1->3->5->7
 Explaination: There is no even number. So no need for modification.
  */
 public class SegregateEvenAndOddNodeInLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(1);
         head.next = new Node(2);
         head.next.next = new Node(3);

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class SumOfSubsequenceArrayPrint {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         int  arr[] = {3, 34, 4, 12, 5, 2};
         int sum = 9;
         Arrays.sort(arr);

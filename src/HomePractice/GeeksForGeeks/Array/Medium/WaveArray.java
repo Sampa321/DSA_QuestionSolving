@@ -20,7 +20,7 @@ Input: arr[] = [1]
 Output: [1]
  */
 public class WaveArray {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array size: ");
         int n = sc.nextInt();

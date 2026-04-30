@@ -18,7 +18,7 @@ The substrings will be ["j", "a", "j", "a", "ja", "aj", "ja", "jaj", "aja", "jaj
 Out of these the unique are ["j", "a", "ja", "aj", "jaj", "aja", "jaja"].
  */
 public class UniqueSubstring {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the string : ");
         String str = sc.next();

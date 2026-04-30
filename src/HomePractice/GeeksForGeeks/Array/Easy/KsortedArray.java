@@ -17,7 +17,7 @@ Input: n=7, arr[] = {13, 8, 10, 7, 15, 14, 12}, k = 1
 Output: No
  */
 public class KsortedArray {
-    static void main(String[] args) {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the array length : ");
         int n = sc.nextInt();

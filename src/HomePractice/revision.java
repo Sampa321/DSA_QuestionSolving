@@ -1,7 +1,7 @@
 package HomePractice;
 
 public class revision {
-    static void main() {
+    public static void main(String []args) {
         int n=4;
         for(int i=0;i<4;i++)
         {

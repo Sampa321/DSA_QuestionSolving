@@ -86,7 +86,7 @@ public class GetMinFromStack {
         }
         return Collections.min(this.list);
     }
-    static void main(String[] args) {
+   public static void main(String[] args) {
         GetMinFromStack stack = new GetMinFromStack();
         stack.push(2);
         stack.push(3);

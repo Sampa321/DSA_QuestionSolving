@@ -3,7 +3,7 @@ package ClassPractice.MainTopic.Backtracking.Permutation.UniqueElement;
 import java.util.ArrayList;
 
 public class PermutationOfStringWithoutExtraString {
-    static void main(String[] args) {
+   public static void main(String[] args) {
        String str = "ABC";
        String result = "";
        char []charStr = str.toCharArray();

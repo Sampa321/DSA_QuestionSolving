@@ -5,7 +5,7 @@ import ClassPractice.MainTopic.LinkedList.Node;
 import java.util.HashSet;
 
 public class NaiveApproach {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(1);
         Node p1 = new Node(2);
         Node p2 = new Node(3);

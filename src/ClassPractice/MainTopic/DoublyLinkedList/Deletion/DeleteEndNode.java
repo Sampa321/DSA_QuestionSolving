@@ -3,7 +3,7 @@ package ClassPractice.MainTopic.DoublyLinkedList.Deletion;
 import ClassPractice.MainTopic.DoublyLinkedList.Node;
 
 public class DeleteEndNode {
-    public static void main() {
+    public static void main(String []args) {
         //Node head = null;
         //Node head = new Node(22);
         Node head = new Node(10);

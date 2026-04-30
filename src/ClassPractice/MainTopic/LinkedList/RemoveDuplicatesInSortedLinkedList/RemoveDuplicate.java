@@ -3,7 +3,7 @@ package ClassPractice.MainTopic.LinkedList.RemoveDuplicatesInSortedLinkedList;
 import ClassPractice.MainTopic.LinkedList.Node;
 
 public class RemoveDuplicate {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(10);
         head.next = new Node(10);
         head.next.next = new Node(20);

@@ -19,7 +19,7 @@ Output: -1
 Explanation: No 1s are present in the array, so return -1.
  */
 public class MinimumSwapOfGroup1S {
-    static void main() {
+    public static void main(String []args) {
         int []arr = {1, 0, 1, 0, 1, 1};
         System.out.println(minSwaps(arr));
     }

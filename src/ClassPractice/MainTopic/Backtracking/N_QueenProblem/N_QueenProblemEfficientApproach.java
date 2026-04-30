@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class N_QueenProblemEfficientApproach {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the board size: ");
         int n = sc.nextInt();

@@ -2,11 +2,10 @@ package ClassPractice.MainTopic.CircularDoublyLinkedList.Reverse;
 
 import ClassPractice.MainTopic.CircularDoublyLinkedList.Node;
 
-import java.util.Scanner;
 
 public class CDLL_Reverse {
-    static void main() {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String []args) {
+
         //Node head = null;
         /*Node head = new Node(12);
         head.prev = head;

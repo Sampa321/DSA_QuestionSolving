@@ -20,7 +20,7 @@ Input: head = [7,7,7,7], val = 7
 Output: []
  */
 public class RemoveLinkedListElements {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         ListNode head = new ListNode(1);
         head.next = new ListNode(1);

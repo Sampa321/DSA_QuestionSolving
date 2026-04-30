@@ -4,7 +4,7 @@ import ClassPractice.MainTopic.CircularLinkedList.Node;
 
 public class DeletionAtBeginning {
 
-    public static void main() {
+    public static void main(String []args) {
         Node head = null;
         /*Node head = new Node(23);
         Node p1 = new Node(78);

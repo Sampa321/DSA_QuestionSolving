@@ -22,7 +22,7 @@ public class LinkedLiskInsertionAtEnd {
         this.data = value;
         this.next = null;
     }
-    static void main() {
+    public static void main(String []args) {
         LinkedLiskInsertionAtEnd head = new LinkedLiskInsertionAtEnd(1);
         LinkedLiskInsertionAtEnd p1 = new LinkedLiskInsertionAtEnd(2);
         LinkedLiskInsertionAtEnd p2 = new LinkedLiskInsertionAtEnd(3);

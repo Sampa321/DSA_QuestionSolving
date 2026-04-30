@@ -3,7 +3,7 @@ package ClassPractice.ProblemSolving.Geeksforgeeks.LinkedList.Medium.RemoveLoopI
 import ClassPractice.MainTopic.LinkedList.Node;
 
 public class EfficientApproach {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(1);
         Node p1 = new Node(2);
         Node p2 = new Node(3);

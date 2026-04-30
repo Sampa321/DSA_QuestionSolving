@@ -13,7 +13,7 @@ Explanation: 1 is the smallest positive number for which no subset is there with
 
  */
 public class NotSubsetSum {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         int []arr = {3, 6, 9, 10, 20, 28};
         System.out.println(findSmallest(arr));
     }

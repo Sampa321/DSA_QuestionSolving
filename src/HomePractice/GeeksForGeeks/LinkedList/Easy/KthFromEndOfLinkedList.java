@@ -14,7 +14,7 @@ Output: -1
 Explanation: The given linked list is 10->5->100->5. Since 'k' is more than the number of nodes, the output is -1.
  */
 public class KthFromEndOfLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         Node head = new Node(1);
         head.next = new Node(2);

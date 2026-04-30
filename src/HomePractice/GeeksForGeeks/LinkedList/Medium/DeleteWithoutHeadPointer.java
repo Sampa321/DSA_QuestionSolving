@@ -23,7 +23,7 @@ Explanation: After deleting 20 from the linked list, we have remaining nodes as 
 
  */
 public class DeleteWithoutHeadPointer {
-    static void main() {
+    public static void main(String []args) {
         Node head = new Node(1);
         Node p1 = new Node(2);
         head.next = p1;

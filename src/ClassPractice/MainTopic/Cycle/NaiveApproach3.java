@@ -3,7 +3,7 @@ package ClassPractice.MainTopic.Cycle;
 import java.util.HashSet;
 
 public class NaiveApproach3 {
-    static void main() {
+    public static void main(String []args) {
         Node head = null;
         /*Node head = new Node(10);
         Node p1 = new Node(20);

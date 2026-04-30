@@ -19,7 +19,7 @@ Explanation: We can add 5 after the second node.
 
  */
 public class InsertInSortedCircularLinkedList {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         Node head = new Node(1);
         Node p1 = new Node(2);

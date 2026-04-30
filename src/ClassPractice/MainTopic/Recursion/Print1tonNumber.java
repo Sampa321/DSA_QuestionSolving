@@ -13,7 +13,7 @@ public class Print1tonNumber {
         f(n-1);
         System.out.print(n+" ");
     }
-    static void main() {
+    public static void main(String []args) {
         Scanner sc =  new Scanner(System.in);
         System.out.print("Enter the value of n: ");
         int n = sc.nextInt();

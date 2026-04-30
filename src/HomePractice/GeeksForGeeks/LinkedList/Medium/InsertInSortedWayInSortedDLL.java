@@ -22,7 +22,7 @@ Output: 1->4->10->11->15
 
  */
 public class InsertInSortedWayInSortedDLL {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         Node head = new Node(3);
         Node p1 = new Node(5);

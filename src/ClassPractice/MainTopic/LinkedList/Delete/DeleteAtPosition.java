@@ -3,7 +3,7 @@ import ClassPractice.MainTopic.LinkedList.Node;
 import java.util.Scanner;
 
 public class DeleteAtPosition {
-    static void main() {
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         Node head = new Node(10);
         Node p1 = new Node(20);
