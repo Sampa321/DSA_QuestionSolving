@@ -1,4 +1,4 @@
-package HomePractice.Leadcode.String.Easy;
+package HomePractice.Leetcode.String.Easy;
 
 import java.util.HashSet;
 

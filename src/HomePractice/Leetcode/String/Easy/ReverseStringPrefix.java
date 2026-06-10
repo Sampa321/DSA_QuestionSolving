@@ -1,4 +1,4 @@
-package HomePractice.Leadcode.String.Easy;
+package HomePractice.Leetcode.String.Easy;
 /* 3794.
 You are given a string s and an integer k.
 

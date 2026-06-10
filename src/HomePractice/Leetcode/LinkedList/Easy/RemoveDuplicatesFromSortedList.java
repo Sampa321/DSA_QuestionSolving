@@ -1,7 +1,7 @@
-package HomePractice.Leadcode.LinkedList.Easy;
+package HomePractice.Leetcode.LinkedList.Easy;
 
 
-import HomePractice.Leadcode.LinkedList.ListNode;
+import HomePractice.Leetcode.LinkedList.ListNode;
 
 /* 83.
 Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.

@@ -1,4 +1,4 @@
-package HomePractice.Leadcode.DailySolvingProblem;
+package HomePractice.Leetcode.DailySolvingProblem;
 /*
 396.
 You are given an integer array nums of length n.

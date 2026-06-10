@@ -1,4 +1,4 @@
-package HomePractice.Leadcode.LinkedList.Medium;
+package HomePractice.Leetcode.LinkedList.Medium;
 /* 24.
 Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
 
@@ -19,8 +19,8 @@ Example 4:
 Input: head = [1,2,3]
 Output: [2,1,3]
  */
-import HomePractice.Leadcode.LinkedList.ListNode;
-import static HomePractice.Leadcode.LinkedList.ListNode.traverse;
+import HomePractice.Leetcode.LinkedList.ListNode;
+import static HomePractice.Leetcode.LinkedList.ListNode.traverse;
 
 public class SwapNodesInPairs {
     public static void main(String[] args) {

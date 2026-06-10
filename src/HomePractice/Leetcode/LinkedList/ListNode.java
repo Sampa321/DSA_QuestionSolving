@@ -1,4 +1,4 @@
-package HomePractice.Leadcode.LinkedList;
+package HomePractice.Leetcode.LinkedList;
 
 public class ListNode {
     public int val;

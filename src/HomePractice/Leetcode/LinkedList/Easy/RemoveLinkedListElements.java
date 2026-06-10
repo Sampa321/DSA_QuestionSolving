@@ -1,6 +1,6 @@
-package HomePractice.Leadcode.LinkedList.Easy;
+package HomePractice.Leetcode.LinkedList.Easy;
 
-import HomePractice.Leadcode.LinkedList.ListNode;
+import HomePractice.Leetcode.LinkedList.ListNode;
 
 import java.util.Scanner;
 

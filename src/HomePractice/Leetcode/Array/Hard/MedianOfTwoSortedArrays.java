@@ -1,4 +1,4 @@
-package HomePractice.Leadcode.Array.Hard;
+package HomePractice.Leetcode.Array.Hard;
 
 import java.util.Arrays;
 

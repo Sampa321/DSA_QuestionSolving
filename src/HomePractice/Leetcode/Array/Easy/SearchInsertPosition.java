@@ -1,4 +1,4 @@
-package HomePractice.Leadcode.Array.Easy;
+package HomePractice.Leetcode.Array.Easy;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package HomePractice.Leadcode.Array.Easy;
+package HomePractice.Leetcode.Array.Easy;
 // 18
 import java.util.ArrayList;
 import java.util.List;

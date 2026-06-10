@@ -1,5 +1,5 @@
 
-package HomePractice.Leadcode.Array.Easy;
+package HomePractice.Leetcode.Array.Easy;
 /*1752
 Given an array nums, return true if the array was originally sorted in non-decreasing order, then rotated some number of positions (including zero). Otherwise, return false.
 

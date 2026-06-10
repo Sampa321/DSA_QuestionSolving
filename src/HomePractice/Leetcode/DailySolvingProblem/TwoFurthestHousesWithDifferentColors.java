@@ -1,4 +1,4 @@
-package HomePractice.Leadcode.DailySolvingProblem;
+package HomePractice.Leetcode.DailySolvingProblem;
 
 import java.util.Scanner;
 

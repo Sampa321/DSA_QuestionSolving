@@ -1,4 +1,4 @@
-package HomePractice.Leadcode.Array.Median;
+package HomePractice.Leetcode.Array.Median;
 
 import java.util.ArrayList;
 import java.util.List;
