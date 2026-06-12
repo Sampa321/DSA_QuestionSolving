@@ -22,12 +22,9 @@ public class EqualPointInBrackets {
         int c=0;
         for(int i=0;i<str.length();i++)
         {
-
-            if(str.charAt(i)==')')
-                c++;
+            if(str.charAt(i)==')') c++;
         }
         int open=0;
-
         for(int i=0;i<str.length();i++)
         {
             if(str.charAt(i)=='(')
@@ -38,8 +35,7 @@ public class EqualPointInBrackets {
             {
                 c--;
             }
-
-            if(open==c) return i+1;
+            if(open == c) return i+1;
         }
         return 0;
     }
