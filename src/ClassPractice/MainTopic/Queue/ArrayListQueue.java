@@ -44,8 +44,6 @@ public class ArrayListQueue {
         if(this.front == -1)
         {
             this.front = 0;
-            this.rear = 0;
-            return;
         }
         this.list.add(value);
         this.size++;
@@ -58,21 +56,21 @@ public class ArrayListQueue {
             System.out.println("List is empty!!");
         }
         else {
-            list.remove(this.front++);
+            list.remove(this.front);
             this.size--;
-            this.front++;
+            this.rear--;
         }
     }
 
     public static void main(String[] args) {
-        ArrayListQueue qu = new ArrayListQueue();
-        qu.enqueue(10);
-        qu.enqueue(20);
-        qu.enqueue(30);
-        // System.out.println("Size : "+qu.getSize());
-
-        System.out.println("Rear : "+qu.getRear());
-        System.out.println(qu.getFront());
-        System.out.println("Empty : "+qu.isEmpty());
+            ArrayListQueue qu = new ArrayListQueue();
+            qu.enqueue(10);
+            qu.enqueue(20);
+            qu.enqueue(30);
+            qu.dequeue();
+            System.out.println("Size : "+qu.getSize());
+           System.out.println("Rear : "+qu.getRear());
+          System.out.println(qu.getFront());
+          System.out.println("Empty : "+qu.isEmpty());
     }
 }

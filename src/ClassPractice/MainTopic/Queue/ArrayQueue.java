@@ -10,7 +10,7 @@ public class ArrayQueue {
     private int size;
     ArrayQueue(int c){
         this.arr = new int[c];
-        this.size = -1;
+        this.size = 0;
         this.capacity = c;
         this.front = -1;
         this.rear = -1;
@@ -22,7 +22,7 @@ public class ArrayQueue {
         return this.size == -1;
     }
     public int getSize(){
-        return this.size+1;
+        return this.size;
     }
     public void dequeue(){
         if(this.size == -1)
@@ -31,6 +31,7 @@ public class ArrayQueue {
             return;
         }
         this.arr[front++] = 0;
+        this.size--;
     }
 
     public void enqueue(int v){
@@ -38,7 +39,7 @@ public class ArrayQueue {
         {
             this.front = 0;
             this.rear = 0;
-            arr[this.front] = v;
+            arr[this.rear] = v;
             this.size++;
         }
         else if(this.capacity-1 == this.rear)
@@ -46,8 +47,8 @@ public class ArrayQueue {
             System.out.println("Queue is full !!");
         }
         else {
-            arr[++this.size] = v;
-            this.rear++;
+            arr[++this.rear] = v;
+            this.size++;
         }
 
     }
@@ -73,17 +74,17 @@ public class ArrayQueue {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the capacity : ");
-        int capacity = sc.nextInt();
+        int capacity = 3;
         ArrayQueue qu = new ArrayQueue(capacity);
         qu.enqueue(10);
-        qu.enqueue(10);
+        qu.enqueue(20);
         System.out.println("hello");
-        qu.enqueue(10);
+        qu.enqueue(30);
         qu.dequeue();
-        System.out.println("Size :"+qu.getSize());
-        System.out.println("Full :"+qu.isFull());
-        System.out.println("Front value :"+qu.getFront());
-        System.out.println("Rear value :"+qu.getRear());
+        System.out.println("Size : "+qu.getSize());
+        System.out.println("Full : "+qu.isFull());
+        System.out.println("Front value : "+qu.getFront());
+        System.out.println("Rear value : "+qu.getRear());
         System.out.println("Empty : "+qu.isEmpty());
     }
 }

@@ -61,11 +61,14 @@ public class CircularArrayQueue {
     public static void main(String[] args) {
         CircularArrayQueue queue = new CircularArrayQueue(4);
         queue.enqueue(10);
-        System.out.println(queue.getFront());
+        queue.enqueue(30);
+        queue.enqueue(40);
+        queue.enqueue(50);
+        System.out.println(queue.getFront()); //Return index;
         queue.dequeue();
         queue.dequeue();
-        System.out.println(queue.getRear());  //return index
-        System.out.println(queue.getFront());
-        System.out.println(queue.isEmpty());
+        System.out.println("Rear : "+queue.getRear());  //return index
+        System.out.println("Front : "+queue.getFront());
+        System.out.println("Empty : "+queue.isEmpty());
     }
 }
