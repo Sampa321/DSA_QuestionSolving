@@ -22,10 +22,10 @@ Sum of all these is 20.
  */
 public class EfficientApproach {
     public static void main(String[] args) {
-        int []arr = {1, 2, 3, 4};
+        int []arr = {1,5, 7, 6, 2, 8, 5};
         System.out.println(sumSubMins(arr));
     }
-    public static int sumSubMins(int[] arr) {
+    public static int sumSubMins(int []arr) {
         // code here
         ArrayList<Integer> nextSmaller = new ArrayList<>();
         ArrayList<Integer> previousSmaller = new ArrayList<>();
