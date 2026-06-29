@@ -15,7 +15,7 @@ public class ArrayListQueue {
     }
 
     public boolean isEmpty(){
-        return this.front == -1;
+        return this.getSize() == 0;
     }
 
     public int getSize(){
@@ -23,7 +23,7 @@ public class ArrayListQueue {
     }
 
     public int getFront(){
-        if(this.front == -1)
+        if(this.getSize() == 0)
         {
             System.out.println("Queue is empty!!");
             return -1;
@@ -32,7 +32,7 @@ public class ArrayListQueue {
     }
 
     public int getRear(){
-        if(this.rear == -1)
+        if(this.getSize() == 0)
         {
             System.out.println("Queue is empty!!");
             return -1;
@@ -41,7 +41,7 @@ public class ArrayListQueue {
     }
 
     public void enqueue(int value){
-        if(this.front == -1)
+        if(this.getSize() == 0)
         {
             this.front = 0;
         }
@@ -51,9 +51,9 @@ public class ArrayListQueue {
     }
 
     public void dequeue(){
-        if(this.front == -1)
+        if(this.getSize() == 0)
         {
-            System.out.println("List is empty!!");
+            System.out.println("Queue is empty!!");
         }
         else {
             list.remove(this.front);

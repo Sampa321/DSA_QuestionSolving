@@ -3,8 +3,8 @@ package ClassPractice.MainTopic.Queue;
 import java.util.Scanner;
 
 public class ArrayQueue {
-    private final int []arr;
-    private final int capacity;
+    private int []arr;
+    private int capacity;
     private int front;
     private int rear;
     private int size;
@@ -16,16 +16,16 @@ public class ArrayQueue {
         this.rear = -1;
     }
     public boolean isFull(){
-        return this.size == this.capacity-1;
+        return this.size == this.capacity;
     }
     public boolean isEmpty(){
-        return this.size == -1;
+        return this.size == 0;
     }
     public int getSize(){
         return this.size;
     }
     public void dequeue(){
-        if(this.size == -1)
+        if(this.size == 0)
         {
             System.out.println("Queue is empty!!");
             return;
@@ -35,44 +35,44 @@ public class ArrayQueue {
     }
 
     public void enqueue(int v){
-        if(this.front == -1 && this.rear == -1)
+        if(this.getSize() == 0)
         {
             this.front = 0;
             this.rear = 0;
-            arr[this.rear] = v;
+            arr[this.size] = v;
             this.size++;
         }
-        else if(this.capacity-1 == this.rear)
+        else if(this.isFull())
         {
             System.out.println("Queue is full !!");
         }
         else {
-            arr[++this.rear] = v;
+            this.rear++;
+            arr[this.size] = v;
             this.size++;
         }
 
     }
 
     public int getFront(){
-        if(this.front == -1)
+        if(this.getSize() == 0)
         {
             System.out.println("Queue is empty!!");
-            return Integer.MAX_VALUE;
+            return -1;
         }
         return this.arr[this.front];
     }
 
     public int getRear(){
-        if(this.front == -1)
+        if(this.getSize() == 0)
         {
             System.out.println("Queue is empty!!");
-            return Integer.MAX_VALUE;
+            return -1;
         }
         return this.arr[this.rear];
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Enter the capacity : ");
         int capacity = 3;
         ArrayQueue qu = new ArrayQueue(capacity);
