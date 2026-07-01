@@ -45,20 +45,25 @@ public class ArrayListQueue {
         {
             this.front = 0;
         }
+
         this.list.add(value);
         this.size++;
         this.rear++;
     }
 
     public void dequeue(){
-        if(this.getSize() == 0)
+        if(this.isEmpty())
         {
             System.out.println("Queue is empty!!");
+            return;
         }
-        else {
-            list.remove(this.front);
-            this.size--;
-            this.rear--;
+        list.remove(this.front);
+        this.size--;
+        this.rear--;
+        if(this.size == 0)
+        {
+            this.front = -1;
+            this.rear = -1;
         }
     }
 

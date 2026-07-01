@@ -1,41 +1,45 @@
 package ClassPractice.MainTopic.Queue.NumberOfDigitFound;
-
-import java.util.ArrayList;
+/*
+Given a number 'n' , print first 'n' numbers(in including order) such that all the numbers have digits in the array [5,6]
+Output : 5, 6, 55, 56, 65, 66,555, 556, 565, 566, 655, 656, 665, 666, 5555, 5556, 5565, 5566, 5655, 5656
+ */
+import java.util.HashSet;
 
 public class NaiveApproach {
     public static void main(String []args) {
         int []arr = {5,6};
         int n = 20;
-        if(n == 1)
+        int c = 0;
+        HashSet<Integer> set = new HashSet<>();
+        set.add(arr[0]);
+        set.add(arr[1]);
+        int number = 1;
+        while (true)
         {
-            System.out.print(arr[0] + " ");
-            return;
-        }
-        if(n == 2)
-        {
-            System.out.print(arr[0] + " ");
-            System.out.print(arr[1]+ " ");
-            return;
-        }
-        System.out.print(arr[0] + " ");
-        System.out.print(arr[1]+ " ");
-        int first = arr[0];
-        int second = arr[1];
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(first);
-        list.add(second);
-        int index = 0;
-        while(true)
-        {
-            int temp1 = list.get(index) * 10 + arr[0];
-            System.out.print(temp1 + " ");
-            list.add(temp1);
-            if(list.size() == n) break;
-            temp1 = list.get(index) * 10 + arr[1];
-            System.out.print(temp1 + " ");
-            list.add(temp1);
-            if(list.size() == n) break;
-            index++;
+            int num = number;
+            boolean flag = true;
+            while (num != 0)
+            {
+                int dight = num % 10;
+                if(!set.contains(dight))
+                {
+                    flag = false;
+                    break;
+                }
+                else {
+                    num = num /10;
+                }
+            }
+            if(flag)
+            {
+                System.out.print(number+" ");
+                c++;
+            }
+            if (c == n)
+            {
+                break;
+            }
+            number++;
         }
     }
 }

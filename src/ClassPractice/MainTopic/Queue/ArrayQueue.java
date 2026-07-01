@@ -1,7 +1,6 @@
 package ClassPractice.MainTopic.Queue;
 
-import java.util.Scanner;
-
+import java.util.Arrays;
 public class ArrayQueue {
     private int []arr;
     private int capacity;
@@ -30,7 +29,15 @@ public class ArrayQueue {
             System.out.println("Queue is empty!!");
             return;
         }
-        this.arr[front++] = 0;
+        else if(this.size == 1)
+        {
+            this.arr[front] = 0;
+            this.front = -1;
+            this.rear = -1;
+        }
+        else {
+            this.arr[front++] = 0;
+        }
         this.size--;
     }
 
@@ -39,19 +46,16 @@ public class ArrayQueue {
         {
             this.front = 0;
             this.rear = 0;
-            arr[this.size] = v;
-            this.size++;
+            arr[this.size++] = v;
         }
         else if(this.isFull())
         {
             System.out.println("Queue is full !!");
         }
         else {
-            this.rear++;
-            arr[this.size] = v;
+            arr[++this.rear] = v;
             this.size++;
         }
-
     }
 
     public int getFront(){
@@ -78,10 +82,10 @@ public class ArrayQueue {
         ArrayQueue qu = new ArrayQueue(capacity);
         qu.enqueue(10);
         qu.enqueue(20);
-        System.out.println("hello");
         qu.enqueue(30);
         qu.dequeue();
         System.out.println("Size : "+qu.getSize());
+        System.out.println(Arrays.toString(qu.arr));
         System.out.println("Full : "+qu.isFull());
         System.out.println("Front value : "+qu.getFront());
         System.out.println("Rear value : "+qu.getRear());

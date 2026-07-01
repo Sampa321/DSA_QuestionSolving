@@ -1,4 +1,4 @@
-package ClassPractice.MainTopic.Dequeue;
+package ClassPractice.MainTopic.Deque;
 
 
 import ClassPractice.MainTopic.DoublyLinkedList.Node;
@@ -62,8 +62,8 @@ public class DoublyLinkedList {
         }
         else {
             this.front = this.front.next;
+            this.front.prev = null;
             this.head = this.front;
-            this.head.next.prev = null;
         }
         this.size--;
     }
@@ -138,12 +138,12 @@ public class DoublyLinkedList {
         sc.removeFront();
         sc.insertRear(40);
         sc.removeFront();
-        //sc.removeRear();
+        sc.removeRear();
        System.out.println(sc.getRear());
         System.out.println(sc.getSize());
         sc.printDequeue();
-//       System.out.println(sc.getFront(head));
-//       System.out.println(sc.getRear(head));
-//        Node.traverse(head);
+       System.out.println();
+       System.out.println(sc.getFront());
+       System.out.println(sc.getRear());
     }
 }

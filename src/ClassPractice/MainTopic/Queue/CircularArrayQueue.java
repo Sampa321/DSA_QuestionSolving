@@ -22,13 +22,17 @@ public class CircularArrayQueue {
 
     int getFront(){
         if(this.isEmpty()) return -1;
-        else return front;
+        else return arr[front];
     }
 
     //return rear index
     int getRear(){
-        if(this.isEmpty()) return -1;
-        else return (this.front + this.size + 1) % this.capacity;
+        if(this.isEmpty()) {
+            return -1;
+        }
+        else{
+            return (this.front + this.size - 1) % this.capacity;
+        }
     }
 
     void enqueue(int value){
@@ -38,10 +42,9 @@ public class CircularArrayQueue {
         }
         if(this.isEmpty())
         {
-            this.front++;
+            this.front = 0;
         }
-        int rear = getRear();
-        rear = (rear + 1) % this.capacity;
+        int rear = (this.front + this.size) % this.capacity;
         this.arr[rear] = value;
         this.size++;
     }
@@ -55,18 +58,22 @@ public class CircularArrayQueue {
         int temp = this.arr[this.front];
         this.front = (this.front + 1) % this.capacity;
         this.size--;
+        if (this.size == 0)
+        {
+            this.front = -1;
+        }
         return temp;
     }
 
     public static void main(String[] args) {
-        CircularArrayQueue queue = new CircularArrayQueue(4);
+        CircularArrayQueue queue = new CircularArrayQueue(3);
         queue.enqueue(10);
         queue.enqueue(30);
         queue.enqueue(40);
         queue.enqueue(50);
         System.out.println(queue.getFront()); //Return index;
-        queue.dequeue();
-        queue.dequeue();
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
         System.out.println("Rear : "+queue.getRear());  //return index
         System.out.println("Front : "+queue.getFront());
         System.out.println("Empty : "+queue.isEmpty());
