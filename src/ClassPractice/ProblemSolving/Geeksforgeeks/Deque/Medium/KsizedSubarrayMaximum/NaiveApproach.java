@@ -9,7 +9,6 @@ public class NaiveApproach {
         ArrayList<Integer> maxRe = new ArrayList<>();
         ArrayList<Integer> minRe = new ArrayList<>();
         int []arr = {7,18,15,10,21,13};
-
         int k = 3;
         for(int i = 0; i < arr.length-k+1; i+=1)
         {

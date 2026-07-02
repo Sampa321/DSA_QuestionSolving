@@ -11,6 +11,7 @@ public class EfficientApproach {
         ArrayList<Integer> result = new ArrayList<>();
         Deque<Integer> dq = new LinkedList<>();
 
+
         //Traverse the first k element of the array
         //Check the last element of deque, if it is smaller than a[i], remove it.
         //if it is greater than a[i], just add 'i' to the dq;
