@@ -1,4 +1,5 @@
 package ClassPractice.ProblemSolving.Geeksforgeeks.Deque.Medium.GasStation;
+
 /*
 There are n gas stations along a circular tour. You are given two integer arrays gas[] and cost[], where gas[i] is the amount of gas available at station i and cost[i] is the gas needed to travel from station i to station (i+1). You have a car with an unlimited gas tank and start with an empty tank at some station. Your task is to return the index of the starting station if it is possible to travel once around the circular route in a clockwise direction without running out of gas at any station; otherwise, return -1.
 
@@ -17,42 +18,30 @@ Input: gas[] = [3, 9], cost[] = [7, 6]
 Output: -1
 Explanation: There is no gas station to start with such that you can complete the tour.
  */
-import java.util.Deque;
-import java.util.LinkedList;
-
-public class GasStationBetterApproach {
-    public static void main(String []args) {
-        int []gas = {4, 5, 7, 4};
-        int []cost = {6, 6, 3, 5};
-        int i = 0;
-        int curr_petrol = 0;
-        int c = 0;
-        Deque<Integer> dq = new LinkedList<>();
-        while (i < gas.length)
-        {
-            dq.add(i);
-            curr_petrol = curr_petrol + (gas[i] - cost[i]);
-            if(curr_petrol < 0)
-            {
-                c++;
-            }
-            if(c == gas.length)
-            {
-                System.out.println(-1);
-                return;
-            }
-            while (curr_petrol < 0 && !dq.isEmpty())
-            {
-                int j = dq.removeFirst();
-                curr_petrol = curr_petrol - (gas[j] - cost[j]);
-            }
-
-            i = (i+1) % gas.length;
-            if(!dq.isEmpty() && i == dq.peekFirst())
-            {
-                System.out.println(i);
-                return;
-            }
-        }
+// T.C = O(n), S.C = O(1)
+public class GasStationEfficientApproach {
+   public static void main(String[] args) {
+       int []gas = {4, 5, 7, 4};
+       int []cost = {6, 6, 3, 5};
+       int start = 0;
+       int curr_petrol = 0;
+       int prev_petrol = 0;
+       for(int i = 0; i < gas.length; i++)
+       {
+           curr_petrol += (gas[i] - cost[i]);
+           if(curr_petrol < 0)
+           {
+               start = i+1;
+               prev_petrol += curr_petrol;
+               curr_petrol = 0;
+           }
+       }
+       if(curr_petrol + prev_petrol >= 0)
+       {
+           System.out.println(start);
+       }
+       else {
+           System.out.println(-1);
+       }
     }
 }
