@@ -1,6 +1,6 @@
 package HomePractice.GeeksForGeeks.LinkedList.Medium;
 
-import ClassPractice.MainTopic.Cycle.Node;
+import ClassPractice.MainTopic.LinkedList.Cycle.Node;
 
 /*
 You are given the head of a singly linked list. If a loop is present in the linked list then return the first node of the loop else return -1.

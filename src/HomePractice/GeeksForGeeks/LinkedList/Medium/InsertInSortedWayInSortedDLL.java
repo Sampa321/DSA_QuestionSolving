@@ -1,6 +1,6 @@
 package HomePractice.GeeksForGeeks.LinkedList.Medium;
 
-import ClassPractice.MainTopic.DoublyLinkedList.Node;
+import ClassPractice.MainTopic.LinkedList.DoublyLinkedList.Node;
 
 import java.util.Scanner;
 

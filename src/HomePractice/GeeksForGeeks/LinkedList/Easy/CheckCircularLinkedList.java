@@ -1,6 +1,6 @@
 package HomePractice.GeeksForGeeks.LinkedList.Easy;
 
-import ClassPractice.MainTopic.CircularLinkedList.Node;
+import ClassPractice.MainTopic.LinkedList.CircularLinkedList.Node;
 
 /*
 Given the head, the head of a singly linked list, Returns true if the linked list is circular & false if it is not circular.

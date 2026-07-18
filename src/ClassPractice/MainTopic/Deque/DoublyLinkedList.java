@@ -1,7 +1,7 @@
 package ClassPractice.MainTopic.Deque;
 
 
-import ClassPractice.MainTopic.DoublyLinkedList.Node;
+import ClassPractice.MainTopic.LinkedList.DoublyLinkedList.Node;
 
 public class DoublyLinkedList {
     Node front;
