@@ -1,4 +1,4 @@
-package ClassPractice.MainTopic.TREE.BinaryTree.DFS;
+package ClassPractice.MainTopic.TREE.BinaryTree.DFS.RecursiveApproachOfTraversal;
 
 import ClassPractice.MainTopic.TREE.BinaryTree.Node;
 

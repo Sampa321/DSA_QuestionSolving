@@ -1,4 +1,4 @@
-package ClassPractice.MainTopic.TREE.BinaryTree.FoundMaxValue;
+package ClassPractice.MainTopic.TREE.BinaryTree.FindMaxValue;
 
 import ClassPractice.MainTopic.TREE.BinaryTree.Node;
 

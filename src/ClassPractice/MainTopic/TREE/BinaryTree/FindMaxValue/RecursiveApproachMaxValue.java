@@ -1,9 +1,9 @@
-package ClassPractice.MainTopic.TREE.BinaryTree.FoundMaxValue;
+package ClassPractice.MainTopic.TREE.BinaryTree.FindMaxValue;
 import ClassPractice.MainTopic.TREE.BinaryTree.Node;
 
 // T.C = O(n), S.C = O(h)
 
-public class RecursiveApproachMaxValue {
+public class  RecursiveApproachMaxValue {
     public static int maxValue(Node root){
         if(root == null) return Integer.MIN_VALUE;
         return Math.max(root.key,Math.max(maxValue(root.left),maxValue(root.right)));
