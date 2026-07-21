@@ -1,4 +1,4 @@
-package ClassPractice.ProblemSolving.LeetCode.Array.RemoveDuplicates;
+package ClassPractice.ProblemSolving.LeetCode.Array.Easy.RemoveDuplicates;
 
 import java.util.Arrays;
 import java.util.HashSet;
