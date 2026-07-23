@@ -34,6 +34,7 @@ public class InsertAtPosition {
         System.out.print("After insert, Circular doubly linked list is : ");
         Node.traverse(head);
     }
+
     public static Node insert(Node head,int ele,int pos)
     {
         Node temp = new Node(ele);
@@ -48,20 +49,29 @@ public class InsertAtPosition {
             System.out.println("Invalid position !!");
            return null;
         }
+
+        Node curr = head;
         if(pos == 1)
         {
+            //Approach-1
+//            temp.next = head;
+//            head.prev = temp;
+//            while (curr.next != head)
+//            {
+//                curr = curr.next;
+//            }
+//            curr.next = temp;
+//            temp.prev = curr;
+
+            //Approach-2
+            Node last = curr.prev;
             temp.next = head;
             head.prev = temp;
-            Node curr = head;
-            while (curr.next != head)
-            {
-                curr = curr.next;
-            }
-            curr.next = temp;
-            temp.prev = curr;
+            temp.prev = last;
+            last.next = temp;
             return temp;
         }
-        Node curr = head;
+
         for(int i=1;i<pos-1;i++)
         {
             if(curr.next == head)

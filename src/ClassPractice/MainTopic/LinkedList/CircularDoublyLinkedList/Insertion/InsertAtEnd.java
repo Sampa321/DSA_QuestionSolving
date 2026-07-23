@@ -41,21 +41,31 @@ public class InsertAtEnd {
             temp.next = temp;
             return temp;
         }
-        if(head.next == head)
-        {
-            head.next = temp;
-            temp.next = head;
-            head.prev = temp;
-            temp.prev = head;
-            return head;
-        }
-        Node curr = head;
-        while (curr.next != head)
-        {
-            curr = curr.next;
-        }
-        curr.next = temp;
-        temp.prev = curr;
+
+        //Approach-1
+//        if(head.next == head)
+//        {
+//            head.next = temp;
+//            temp.next = head;
+//            head.prev = temp;
+//            temp.prev = head;
+//            return head;
+//        }
+//        Node curr = head;
+//        while (curr.next != head)
+//        {
+//            curr = curr.next;
+//        }
+//        curr.next = temp;
+//        temp.prev = curr;
+//        temp.next = head;
+//        head.prev = temp;
+//        return head;
+
+        //Approach-2
+        Node last = head.prev;
+        last.next = temp;
+        temp.prev = last;
         temp.next = head;
         head.prev = temp;
         return head;

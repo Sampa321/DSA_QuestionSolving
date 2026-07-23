@@ -42,23 +42,34 @@ public class InsertAtStart {
             temp.prev = temp;
             return temp;
         }
-        if (head.next == head)
-        {
-            head.next = temp;
-            head.prev = head;
-            temp.prev = head;
-            temp.next = head;
-            return temp;
-        }
+
+        //Approach-1
+//        if (head.next == head)
+//        {
+//            head.next = temp;
+//            head.prev = head;
+//            temp.prev = head;
+//            temp.next = head;
+//            return temp;
+//        }
+//        temp.next = head;
+//        head.prev = temp;
+//        Node curr = head;
+//        while(curr.next != head)
+//        {
+//            curr = curr.next;
+//        }
+//        temp.prev = curr;
+//        curr.next = temp;
+//        return temp;
+
+
+        //Approach-2
+        Node last = head.prev;
         temp.next = head;
         head.prev = temp;
-        Node curr = head;
-        while(curr.next != head)
-        {
-            curr = curr.next;
-        }
-        temp.prev = curr;
-        curr.next = temp;
+        last.next = temp;
+        temp.prev = last;
         return temp;
     }
 }

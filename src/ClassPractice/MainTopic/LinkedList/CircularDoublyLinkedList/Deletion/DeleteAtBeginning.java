@@ -31,13 +31,21 @@ public class DeleteAtBeginning {
         {
             return null;
         }
-        Node curr = head;
-        while(curr.next != head)
-        {
-            curr = curr.next;
-        }
-        curr.next = head.next;
-        head.next.prev = curr;
+
+        //Approach-1
+//        Node curr = head;
+//        while(curr.next != head)
+//        {
+//            curr = curr.next;
+//        }
+//        curr.next = head.next;
+//        head.next.prev = curr;
+
+        //Approach-2
+        Node last = head.prev;
+        last.next = head.next;
+        head.next.prev = last;
+
         return head.next;
     }
 }

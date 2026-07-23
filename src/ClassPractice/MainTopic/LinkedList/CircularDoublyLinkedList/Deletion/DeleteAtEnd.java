@@ -37,12 +37,20 @@ public class DeleteAtEnd {
             return null;
         }
         Node curr = head;
-        while(curr.next.next != head)
-        {
-            curr = curr.next;
-        }
-        curr.next = head;
-        head.prev = curr;
+
+        //Approach-1
+//        while(curr.next.next != head)
+//        {
+//            curr = curr.next;
+//        }
+//        curr.next = head;
+//        head.prev = curr;
+
+
+        //Approach-2
+        Node last = head.prev;
+        head.prev = last.prev;
+        last.prev.next = head;
         return head;
     }
 }
