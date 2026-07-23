@@ -1,4 +1,4 @@
-package HomePractice.Leetcode.Array.Median;
+package HomePractice.Leetcode.Array.Medium;
 
 import java.util.ArrayList;
 import java.util.HashMap;
