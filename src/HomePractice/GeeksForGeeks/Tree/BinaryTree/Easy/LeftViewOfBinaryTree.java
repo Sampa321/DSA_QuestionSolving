@@ -1,5 +1,7 @@
 package HomePractice.GeeksForGeeks.Tree.BinaryTree.Easy;
 
+import HomePractice.GeeksForGeeks.Tree.Node;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -35,7 +37,7 @@ public class LeftViewOfBinaryTree {
             for(int i = 0; i < size; i++)
             {
                 Node curr = queue.poll();
-                if(i == 0) re.add(curr.key);
+                if(i == 0) re.add(curr.data);
                 if(curr.left != null) queue.offer(curr.left);
                 if(curr.right != null) queue.offer(curr.right);
             }
