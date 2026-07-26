@@ -36,6 +36,23 @@ public class PermutationOfStringExtraSpace {
                 track[i] = false;
             }
         }
+
+
+        //Approach-2
+//        if (c == str.length())
+//        {
+//            System.out.print(re +" ");
+//            return;
+//        }
+//        for(int i = 0; i < str.length(); i++)
+//        {
+//            if (!track[i])
+//            {
+//                track[i] = true;
+//                permutation(str, re + str.charAt(i), c+1, track);
+//                track[i] = false;
+//            }
+//        }
     }
 }
 
