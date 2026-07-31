@@ -8,14 +8,14 @@ public class Node {
         this.next = null;
     }
 
-    public static void traverse(ClassPractice.MainTopic.Stack.BasicMethod.Node head)
+    public static void traverse(Node head)
     {
         if(head == null)
         {
             System.out.println("Linked list empty!");
             return;
         }
-        ClassPractice.MainTopic.Stack.BasicMethod.Node curr = head;
+        Node curr = head;
         while (curr !=  null)
         {
             System.out.print(curr.data+" ");
