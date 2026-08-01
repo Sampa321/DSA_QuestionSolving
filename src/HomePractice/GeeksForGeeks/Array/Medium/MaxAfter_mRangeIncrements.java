@@ -48,7 +48,7 @@ public class MaxAfter_mRangeIncrements {
 //    }
 
     // T.C = O(n+m), S.C = O(n)
-    public int findMax(int n, int[] a, int[] b, int[] k) {
+    public static int findMax(int n, int[] a, int[] b, int[] k) {
         // code here
         int []arr = new int[n+1];
         for(int  i = 0; i < k.length; i++)
