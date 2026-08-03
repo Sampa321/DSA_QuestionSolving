@@ -11,7 +11,7 @@ public class Node {
         this.data = val;
     }
 
-    void traverse(Node head){
+   public static void traverse(Node head){
         Node curr = head;
         if(curr == null)
         {
