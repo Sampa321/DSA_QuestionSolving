@@ -21,16 +21,21 @@ public class SpiralMatrix {
                 System.out.print(mat[i][R] +" ");
             }
             R--;
-            for(int i = R; i >= L && T <= B; i--)
+            if(T <= B)
             {
-                System.out.print(mat[B][i] +" ");
+                for(int i = R; i >= L; i--)
+                {
+                    System.out.print(mat[B][i] +" ");
+                }
+                B--;
             }
-            B--;
-            for(int i = B; i >= T && L <= R; i--)
+            if(L <= R){
+            for(int i = B; i >= T; i--)
             {
                 System.out.print(mat[i][L] +" ");
             }
             L++;
+        }
         }
     }
 }
