@@ -1,25 +1,44 @@
 package HomePractice.DailyPractice.Practice;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Stack;
+
 public class Queue {
      public static void main(String []args)
      {
-         int []gas = {4, 5, 7, 4};
-         int []cost = {6, 6, 3, 5};
-         for(int i = 0; i < gas.length; i++)
+         int []heights = {4,2,0,3,2,4,3,4};
+         ArrayList<Integer> ns = new ArrayList<>();
+         ArrayList<Integer> ps = new ArrayList<>();
+         Stack<Integer> st = new Stack<>();
+         for(int i = heights.length-1; i >= 0; i--)
          {
-             int end = i;
-             int curr_petrol = 0;
-             while (true)
+             while(!st.isEmpty() && heights[st.peek()] >= heights[i])
              {
-                 curr_petrol += (gas[end] - cost[end]);
-                 if(curr_petrol < 0) break;
-                 if(i == end)
-                 {
-                     System.out.println(i);
-                     return;
-                 }
+                 st.pop();
              }
+             int re = st.isEmpty()? heights.length : st.peek();
+             ns.add(re);
+             st.add(i);
          }
-         System.out.println(-1);
+         Collections.reverse(ns);
+         System.out.println(ns);
+         st.clear();
+         for(int i = 0; i < heights.length; i++)
+         {
+             while (!st.isEmpty() && heights[st.peek()] >= heights[i]) st.pop();
+             int re = st.isEmpty()? -1 : st.peek();
+             ps.add(re);
+             st.add(i);
+         }
+         System.out.println(ps);
+
+         int maximum = Integer.MIN_VALUE;
+         for(int i = 0; i < heights.length; i++)
+         {
+             int curr = (ns.get(i)-ps.get(i)-1)*heights[i];
+             maximum = Math.max(maximum, curr);
+         }
+         System.out.println(maximum);
      }
 }
