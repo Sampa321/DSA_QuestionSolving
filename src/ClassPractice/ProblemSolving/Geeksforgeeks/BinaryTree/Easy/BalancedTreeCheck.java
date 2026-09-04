@@ -43,4 +43,24 @@ public class BalancedTreeCheck {
 //        if(root == null) return 0;
 //        return 1 + Math.max(height(root.left), height(root.right));
 //    }
+
+
+    // Efficient Approach
+    public static boolean isBalanced(Node root) {
+        // code here
+        int re = balanceTree(root);
+        if(re == -1) return false;
+        return true;
+    }
+
+    public static int balanceTree(Node root)
+    {
+        if(root == null) return 0;
+        int lHeight = balanceTree(root.left);
+        if(lHeight == -1) return -1;
+        int rHeight = balanceTree(root.right);
+        if(rHeight == -1) return -1;
+        if(Math.abs(lHeight-rHeight) > 1) return -1;
+        return Math.max(lHeight, rHeight) +1;
+    }
 }

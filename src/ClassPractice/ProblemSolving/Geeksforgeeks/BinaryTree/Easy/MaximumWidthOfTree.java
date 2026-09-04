@@ -31,6 +31,7 @@ public class MaximumWidthOfTree {
 
 //    public static int maxWidth(Node root) {
 //       int maxWidth = 0;
+        //if(root == null) return 0;
 //       Queue<Node> qu = new LinkedList<>();
 //       qu.add(root);
 //       while (!qu.isEmpty())
@@ -56,12 +57,9 @@ public class MaximumWidthOfTree {
         while (qu.size() > 1)
         {
             Node temp = qu.remove();
-            int width = 0;
-            if (temp != null)
+            if (temp == null)
             {
-                width += 1;
-            }
-            else {
+                int width = qu.size();
                 maxWidth = Math.max(maxWidth,width);
                 qu.add(null);
                 continue;
