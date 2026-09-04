@@ -35,10 +35,10 @@ public class ChildrenSumOfBinaryTree {
         //  code here
         if(root == null) return true;
         if(root.left == null && root.right == null) return true;
-        int left = (root.left == null) ? 0 : root.left.data;
-        int right = (root.right == null) ? 0 : root.right.data;
+        int left = (root.left == null) ? 0 : root.left.key;
+        int right = (root.right == null) ? 0 : root.right.key;
 
-        boolean sumTree = left + right == root.data;
+        boolean sumTree = left + right == root.key;
         return sumTree && isSumProperty(root.left) && isSumProperty(root.right);
     }
 }
