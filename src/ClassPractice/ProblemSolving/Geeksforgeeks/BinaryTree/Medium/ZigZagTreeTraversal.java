@@ -109,11 +109,9 @@ public class ZigZagTreeTraversal {
         // code here
         ArrayList<Integer> res = new ArrayList<>();
         if (root == null) return res;
-
         Deque<Node> q = new LinkedList<>();
         q.addFirst(root);
         boolean reverse = false;
-
         while (!q.isEmpty()) {
             int level = q.size();
             for (int i = 0; i < level; i++) {
