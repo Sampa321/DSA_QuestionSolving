@@ -53,7 +53,7 @@ public class CombinationOfSum1 {
         {
             list.add(nums[index]);
             combinationOfSum(index,nums,target-nums[index],list,result);
-            list.remove(list.size()-1);
+            list.removeLast();
         }
         combinationOfSum(index+1,nums, target,list,result);
     }
